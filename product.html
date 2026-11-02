@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Safraan | Fragrance</title>
+<meta name="description" content="Safraan is a fragrance house built around the spice routes: saffron from Kashmir, ylang from the Comoros, frankincense from Oman. Decants, full bottles and discovery sets, delivered islandwide.">
+<meta name="theme-color" content="#eceee8">
+<meta property="og:title" content="Safraan | Fragrance from the spice routes">
+<meta property="og:description" content="Nine fragrances, nine origins. Decants from TT$165, delivered islandwide.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1622618991746-fe6004db3a47?w=1200&q=80&auto=format&fit=crop">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://api.fontshare.com/v2/css?f[]=boska@400,400i,500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="announce">Free islandwide delivery over <b>TT$1,000</b>. Every bottle sourced from authorised distributors.</div>
+
+<nav class="nav" aria-label="Main">
+  <a href="index.html" class="brand" aria-label="Safraan home"><img src="assets/mark.svg" alt="" width="28" height="28">Safraan</a>
+  <div class="nav-links">
+    <a href="index.html#shop">Shop</a>
+    <a href="index.html#atlas">The Atlas</a>
+    <a href="index.html#discovery">Discovery set</a>
+    <a href="index.html#quiz">Scent finder</a>
+  </div>
+  <div class="nav-tools">
+    <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"><i class="ph-light ph-moon"></i></button>
+    <button class="icon-btn bag-btn" data-open-bag aria-label="Open bag"><i class="ph-light ph-handbag"></i><span class="bag-count">0</span></button>
+    <button class="icon-btn burger" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" aria-label="Mobile menu">
+  <a href="index.html#shop">Shop</a>
+  <a href="index.html#atlas">The Atlas</a>
+  <a href="index.html#discovery">Discovery set</a>
+  <a href="index.html#quiz">Scent finder</a>
+  <a href="#" data-open-bag>Your bag</a>
+</div>
+
+<main class="pdp">
+  <div class="wrap" id="pdp"></div>
+  <section class="section" style="padding-top:96px">
+    <div class="wrap"><h2 class="display h2" data-reveal>How it <em>wears.</em></h2><div class="pyr-big" id="pyr" style="margin-top:40px"></div></div>
+  </section>
+  <section class="section" style="padding-top:0">
+    <div class="wrap"><h2 class="display h2" data-reveal style="margin-bottom:40px">You may also like</h2><div class="related" id="related"></div></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand"><a href="index.html" class="brand"><img src="assets/mark.svg" alt="" width="28" height="28">Safraan</a><p>Fragrance from the spice routes, bottled for the tropics. Decants, full bottles and discovery sets.</p></div>
+      <div><h5>Shop</h5><ul><li><a href="index.html#shop">All fragrances</a></li><li><a href="index.html#discovery">Discovery set</a></li><li><a href="index.html#quiz">Scent finder</a></li></ul></div>
+      <div><h5>Help</h5><ul><li><a href="#">Delivery and returns</a></li><li><a href="#">Authenticity</a></li><li><a href="https://wa.me/18682591409" target="_blank" rel="noopener">WhatsApp us</a></li></ul></div>
+      <div><h5>Follow</h5><ul><li><a href="#">Instagram</a></li><li><a href="#">TikTok</a></li></ul></div>
+    </div>
+    <div class="foot-word" aria-hidden="true">Safraan</div>
+    <div class="foot-bottom"><span>Concept build for demonstration. Products and prices are illustrative.</span><span>Site by <a href="https://wa.me/18682591409" target="_blank" rel="noopener">Portside Digital</a></span></div>
+  </div>
+</footer>
+
+<a class="concept" href="https://wa.me/18682591409" target="_blank" rel="noopener">Concept site by <b>Portside Digital</b></a>
+
+<div class="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Your bag" data-lenis-prevent>
+  <div class="drawer-head"><h3>Your bag</h3><button class="icon-btn" data-close aria-label="Close bag"><i class="ph-light ph-x"></i></button></div>
+  <div class="ship"><span id="ship-msg"></span><div class="ship-bar"><i id="ship-fill"></i></div></div>
+  <div class="drawer-body" id="bag-body"></div>
+  <div class="drawer-foot" id="bag-foot">
+    <div class="sum"><span>Subtotal</span><span id="sum-sub"></span></div>
+    <div class="sum"><span>Delivery</span><span id="sum-ship"></span></div>
+    <div class="sum total"><span>Total</span><span id="sum-total"></span></div>
+    <button class="btn btn-ink" id="checkout">Checkout on WhatsApp<span class="isle"><i class="ph-light ph-whatsapp-logo"></i></span></button>
+    <p class="fine">Cash on delivery or card link. No account needed.</p>
+  </div>
+</aside>
+<div class="modal bezel" id="qv" role="dialog" aria-label="Quick view" data-lenis-prevent><div class="core"></div></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/product.js"></script>
+</body>
+</html>
